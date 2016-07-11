@@ -2608,7 +2608,7 @@ width:100%;
 .mature-contentpopup-sec .uncensored-form-fields .month {
     width: 155px;
 }
-.mature-contentpopup-sec .uncensored-form-fields .field:last-child() {
+.mature-contentpopup-sec .uncensored-form-fields{
 	margin-right:0;
 }
 .mature-contentpopup-sec .uncensored-form-fields .uncensored-select-field .field select {

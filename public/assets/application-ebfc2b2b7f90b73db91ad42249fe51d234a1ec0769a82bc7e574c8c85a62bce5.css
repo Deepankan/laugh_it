@@ -1790,7 +1790,7 @@ header .header-thumbnails-sec .header-box a:hover figcaption{
 
 header .header-main-sec{
 	width:100%;
-	float:left:
+	float: left;
 	}
 header .header-banner-sec{
 	background:url("../../images/project-images/header-banner1.jpg");
@@ -3349,7 +3349,7 @@ width:100%;
 .jokes-page .jokes-top-sec .jokes-timeperiod a:hover,.jokes-page .jokes-top-sec .jokes-timeperiod a.active{
 	color:#001000;
 }
-.
+
 .jokes-page .jokes-sec{
 	float: left;
 	width:100%;
@@ -4098,7 +4098,7 @@ width:100%;
 .mature-contentpopup-sec .uncensored-form-fields .month {
     width: 155px;
 }
-.mature-contentpopup-sec .uncensored-form-fields .field:last-child() {
+.mature-contentpopup-sec .uncensored-form-fields{
 	margin-right:0;
 }
 .mature-contentpopup-sec .uncensored-form-fields .uncensored-select-field .field select {
@@ -8091,7 +8091,7 @@ header #main-menu ul.main-nav li:hover .sub-menu li:hover .sub-menu li:first-chi
 .slider-divided-sec .control-sec{
 	top:30%;
 	padding:3.6% 0;
-	height:	
+	height:	auto;
 }
 .slider-divided-sec .hero-slide-up{
 	top:28%;
@@ -9024,7 +9024,7 @@ header #main-menu ul.main-nav li:hover .sub-menu li:hover .sub-menu li:first-chi
 	
 
 
-}
+
 @media (max-width:940px){
 	.slider-aside-sec .description-sec h5{
 		font-size: 19px;
