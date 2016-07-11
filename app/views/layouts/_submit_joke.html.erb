@@ -1,0 +1,73 @@
+<div class="submit-joke-popup">      
+    <div class="popup-modal joke-popup-modal" id="submit-joke-form">
+        <div class="popup-heading">
+            <h3>Submit Joke</h3>
+        </div>
+        <div class="modal-body">
+           <%= form_tag submit_joke_path, multipart: true, id: "submit_joke_form" do %>    
+         
+               <input type="hidden" name="user_id" value="0" />
+                <div class="joke-submit-settings">
+                                
+                    <div class="field-group">
+                        <div class="label">
+                            <label>Joke</label>
+                        </div>
+                        <div class="textarea-field">
+                        
+                            <%= text_area_tag "content"%>
+                        </div>
+                    </div>  
+                   
+                    <div class="field-group">
+                        <div class="label">
+                            <label>Category</label>
+                        </div>
+
+                        <div class="select-field">
+                        <%= select_tag "category", options_for_select(@category.map{|h|  [h[:name],h[:id] ]}), {:prompt => "--select category--"}%>
+
+                        </div>
+                    </div>
+
+             <!--        <div class="field-group">
+                        <div class="label">
+                            <label>Credit Joke to:</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="submit_name" id="submit_name" value="" class="text-input" />  
+                        </div>
+                        <div class="checkbox-field">
+                            <input name="is_anonymous" id="is_anonymous" type="checkbox" value="1" /><label><span></span>Make Anonymous</label>
+                            
+                            
+                        </div>
+
+                    </div> -->
+                    <div class="field-group">
+                        <div class="label">
+                            <label> &nbsp;</label>
+                        </div>
+                        <%= submit_tag "Submit", class: "readmore-btn submit-joke"%>
+                        <!-- <button class="readmore-btn submit-joke" type="button" onclick="submit_joke()" >Submit</button> -->
+                		<div style="float:left; width:445px; margin-top:5px; color:#009900; display:none;" id="joke_loading"></div>
+                        <div style="float:left; width:445px; margin-top:5px; color:#009900; display:none;" id="joke_error"></div>
+                
+                    </div>
+                 </div>
+               <%end%>
+
+
+        </div>
+    </div>
+</div>
+ 
+ 
+
+<script type="text/javascript">
+function confirm_again(d){
+		var c = confirm("This joke has been previously used as the joke of the day on "+d+", are you sure you want to use it again?");
+		if(c) return true;
+		else return false;
+	}
+</script>

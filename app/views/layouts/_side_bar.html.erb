@@ -1,0 +1,5 @@
+<ul>
+<% @category.each do |h|%>
+<li><%= link_to h[:name],get_list_path(id: h[:id]), id: h[:id], class: "click"%></li>
+<%end%>
+</ul>

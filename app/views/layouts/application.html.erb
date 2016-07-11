@@ -1,0 +1,526 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+    Jokes – Your Daily Dose of Really Funny Jokes | Laugh Factory    </title>
+        <meta name="description" content="This is the finest jokes collection in the world! Come laugh at the most updated database of jokes on the planet. Laugh at a huge collection of jokes submitted by people and our great comedians. Submit a joke yourself and share your humor with others"/>
+    <meta name="keywords" content="good jokes, jokes, funny jokes, really funny jokes, laugh factory jokes"/>
+        <meta property="og:title" content="Jokes – Your Daily Dose of Really Funny Jokes | Laugh Factory"/>
+    <meta property="og:url" content="http://www.laughfactory.com/jokes"/>
+    <meta property="og:image" content="http://www.laughfactory.com/images/project-images/logo.png"/>
+    <meta property="og:type" content="blog" />
+    <meta property="og:description" content="This is the finest jokes collection in the world! Come laugh at the most updated database of jokes on the planet. Laugh at a huge collection of jokes submitted by people and our great comedians. Submit a joke yourself and share your humor with others" />
+    <script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/10353562/jokes-left-bottom', [160, 600], 'div-gpt-ad-1467902003945-0').addService(googletag.pubads());
+    googletag.defineSlot('/10353562/jokes-left-top', [180, 150], 'div-gpt-ad-1467902003945-1').addService(googletag.pubads());
+    googletag.defineSlot('/10353562/jokes-top', [728, 90], 'div-gpt-ad-1467902003945-2').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.laughfactory.com/favicon.ico" />
+    
+    <!--================= Project Stylesheet ===================-->
+    <link href="/assets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/jquery.modal.css" rel="stylesheet">
+    <link href="/assets/datepicker.min.css" rel="stylesheet">
+    <link href="/assets/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="/assets/slick.css" rel="stylesheet">
+    <link href="/assets/style.css" rel="stylesheet">
+    <!--============ End Linking Project Stylesheet ============-->
+       
+    <script src="/assets/jquery.js"></script>
+    <script src='//www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" language="javascript" src="/assets/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/assets/header.js"></script>
+    <script type="text/javascript" language="javascript" src="/assets/slides.min.jquery.js"></script>
+    <script type="text/javascript">
+	  
+	  //use this variable for site link in js
+	  var HTTPS_SITE = 'https://www.laughfactory.com/';
+	  var HTTP_SITE = 'http://www.laughfactory.com/';
+	  var HTTP_IMAGES = 'http://cdn.laughfactory.com/images/';
+	  var fb_app_id = '';
+	  </script>
+    <script>
+	  var pro = window.location.protocol;
+	  if(pro=='https:'){
+		  location.href = 'http://www.laughfactory.com/jokes';
+	  }
+	  function close_alertmessage(cid,mid){
+		  $.ajax({
+			data :'cid='+cid+'&mid='+mid,
+			url  : HTTP_SITE+'home/update_alert_message',
+			type : "POST",
+			success : function(response){
+				$(".mid-main").attr('style','');
+				$(".header").attr('style','');
+				$(".orange-message").remove();
+			}
+		});
+	  }
+	  function close_alertmessage_register(cid,mid){
+		  $.ajax({
+			data :'cid='+cid+'&mid='+mid,
+			url  : HTTP_SITE+'home/update_alert_message',
+			type : "POST",
+			success : function(response){
+				var hrf = $("#alert_msg_"+mid).attr('href');
+				hrf = hrf.substring(1);
+				location.href = HTTP_SITE+''+hrf;
+				return false;
+			}
+		});
+		return false;
+	  }
+	  $(document).ready(function(){
+		 
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						opacity:0
+					},500);
+					if (window.console && console.log) {
+						// example return of current slide number
+						//console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						opacity:1
+					},1000);
+					if (window.console && console.log) {
+						// example return of current slide number
+						//console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						opacity:1
+					},1000);
+				}
+			});
+			$("#example").hover(function(){
+					$(this).find('.play').fadeIn(1000);
+					$(this).find('.next').fadeIn(1000);
+					$(this).find('.prev').fadeIn(1000);
+				},
+			function(){
+				$(this).find('.play').fadeOut();
+					$(this).find('.next').fadeOut();
+					$(this).find('.prev').fadeOut();
+					/*$(this).find('.play').css("opacity","0");
+					$(this).find('.next').css("opacity","0");
+					$(this).find('.prev').css("opacity","0");*/
+				});
+				//setTimeout("resize",2000);
+		});
+		});
+	  </script>
+    <script language="javascript">
+	  (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	  
+	  
+	   window.fbAsyncInit = function() {
+	  FB.init({
+		appId      : '530980343596175',
+		cookie     : true,  // enable cookies to allow the server to access 
+							// the session
+		xfbml      : true,  // parse social plugins on this page
+		version    : 'v2.5' // use graph api version 2.5
+	  });
+	   }
+	  
+	  
+	  function loginWithFB(){
+		  FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+			checkUserAuth(response.authResponse.id);
+		  }
+		  else {
+			FB.login(function(response){
+		  		checkUserAuth(response.id);
+		  // Handle the response object, like in statusChangeCallback() in our demo
+		  // code.
+		}, {scope: 'public_profile,email'});
+		  }
+		});
+	  }
+	  
+	  function getFbInfo(){
+		  FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+			getFBData(response);
+		  }
+		  else {
+			FB.login(function(response){
+		  		getFBData(response);
+		  // Handle the response object, like in statusChangeCallback() in our demo
+		  // code.
+		}, {scope: 'public_profile,email'});
+		  }
+		});
+	  }
+	  
+	  function getFBData(response){
+
+		  FB.api('/me',{fields: 'first_name, last_name, email'},function(res){
+
+				$("#fb_id").val(res.id);
+				$("#fb_email").val(res.email);
+				$("#fb_access_token").val(response.authResponse.accessToken);
+				$("#email").val(res.email);
+				$("#firstname").val(res.first_name);
+				$("#lastname").val(res.last_name);
+				
+			});
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+			$(document).ready(function(){
+				 //////////////////show or not cart///////////////////
+				 $("#shopping_cart").hide();  
+			   $.ajax({
+						data :'cart=1',
+						url  : HTTP_SITE+'club/get_cart_items',
+						type : "POST",
+						success : function(response){
+							if(response>0){
+								$("#shopping_cart").show(); 
+								//$("#shopping_cart").css('visibility','visible');
+								$("#cart_items_total").html(response);
+							}
+						}
+				});
+				var originalWidth = screen.width; //1936;// $("body").width(); 
+				//alert(originalWidth);
+				  $(".target").each(resize);
+				  $(window).resize(function(){
+					  $(".target").each(resize);
+				  });
+				  setTimeout(function() {
+				      resize();}, 20); 
+				  function resize() 
+				  {
+					this._originalHeight = this._originalHeight || $(this).height();
+					var bodyWidth = ($("body").width())+17; 
+					if(bodyWidth>1920)
+					{
+						$(this).css("height", '570'); 
+						$(".slides_control").css("height", '570');
+						$(".slide > .play").css("top", '40%'); 
+					}
+					else if(bodyWidth > 960 && originalWidth == 768)
+					{
+						$(this).css("height", '300'); 
+						$(".slides_control").css("height", '300');
+						$("#example").find('.play').fadeIn(1000);
+						$(".slide > .play").css("top", '25%'); 
+						$("#slides > .next").css("top", '53%');// (bodyWidth/35.5)+
+						$("#slides > .prev").css("top", '53%');// (bodyWidth/35.5)+
+					}
+					else if(bodyWidth >960)
+					{
+						var widthDiff = bodyWidth - originalWidth; 
+						final_ratio = originalWidth/300;					
+						var newHeight =  this._originalHeight + (widthDiff / final_ratio);// (bodyWidth/37)+'%';
+						$(this).css("height", (bodyWidth/3.35)); // newHeight
+						$(".slides_control").css("height", (bodyWidth/3.35));
+						//console.log(final_ratio+'/'+newHeight+'/'+originalWidth+'/'+bodyWidth+'/'+this._originalHeight+'/'+$(this).height()+'/'+(widthDiff / final_ratio));
+						$(".slide > .play").css("top", (bodyWidth/37)+'%'); 
+						$("#slides > .next").css("top", '53%');// (bodyWidth/35.5)+
+						$("#slides > .prev").css("top", '53%');// (bodyWidth/35.5)+
+					}
+					else
+					{
+						$(this).css("height", '570'); 
+						$(".slides_control").css("height", '570');
+						$(".slide > .play").css("top", '40%'); 
+						$("#slides > .next").css("top", '53%');// (bodyWidth/35.5)+
+						$("#slides > .prev").css("top", '53%');// (bodyWidth/35.5)+
+					}
+					//console.log(final_ratio+'/'+newHeight+'/'+originalWidth+'/'+bodyWidth+'/'+this._originalHeight+'/'+$(this).height()+'/'+(widthDiff / final_ratio));
+			  	}
+
+				
+			});
+
+$(window).scroll(function () { 
+   $('#header').css('margin-left', '-' +$(window).scrollLeft() + 'px');
+    $('#footer').css('margin-left', '-' +$(window).scrollLeft() + 'px');
+});
+function show_radio(){
+	location.href = HTTP_SITE+'radio';
+}
+/*
+var doc = body = document.body;
+var left = (doc && doc.scrollLeft || body && body.scrollLeft || 0);
+var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0);
+alert(left + ' '+top );*/
+  			window._taboola = window._taboola || [];
+		  _taboola.push({article:'auto'});
+		  !function (e, f, u) {
+			e.async = 1;
+			e.src = u;
+			f.parentNode.insertBefore(e, f);
+		  }(document.createElement('script'),
+		  document.getElementsByTagName('script')[0],
+		  'http://cdn.taboola.com/libtrc/laughfactory/loader.js');
+		 
+
+    </script>
+
+    <!-- header ad code -->
+
+    <script type='text/javascript'>
+		  (function() {
+		  var useSSL = 'https:' == document.location.protocol;
+		  var src = (useSSL ? 'https:' : 'http:') +
+		  '//www.googletagservices.com/tag/js/gpt.js';
+		  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+		  })();
+	  	  </script><script type='text/javascript'>
+				googletag.defineSlot('/10353562/LaughFactoryNetwork_Jokes_RightBottom_160x600', [160, 600], 'div-gpt-ad-1370393177080-0').addService(googletag.pubads());
+				googletag.defineSlot('/10353562/LaughFactoryNetwork_Jokes_RightTop_160x600', [160, 600], 'div-gpt-ad-1370393177080-1').addService(googletag.pubads());
+				googletag.pubads().enableSyncRendering();
+				googletag.pubads().enableSingleRequest();
+				googletag.enableServices();
+				</script>
+				    <!-- header ad code end -->
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "4c98cfc2-e1da-4029-b86a-f0ce80881849", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>  
+
+    </head>
+    <body id="home-page">
+
+<!-- =================== Start #header ==================== -->
+
+ <%= render partial: "layouts/header"%>
+<!-- =============== End #header =============== -->
+
+<div class="main-content-sec">
+<div class="container">
+<?
+##### Jokes Top #################################33 
+?>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<script type="text/javascript" src="/assets/jokes.js"></script>
+<!--============== POPUP SUBMIT JOKE======================-->
+<%= render partial: "layouts/submit_joke"%> 
+
+<script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isCounterWidgetTheme: 1,isHorizontalCounter: 0,isHorizontalLayout: 0,theme: 'OpenSocialShareDefaultTheme',widgets: { top: ["Facebook Like","Facebook Send","Google+ +1","Pinterest Pin it","Reddit","Twitter Tweet"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
+
+
+<div class="jokes-page"><!--jokes page-->
+                
+                <div class="content-sec">
+                    
+                    <!-- /***************** ******************/ -->
+                    <!-- /*********ABOUT TWO SEPARATE SEC *********/ -->
+                    <!-- /***************** ******************/ -->
+                    
+                  <div class="separate-sec">
+                   
+                   <div class="ad-banner full-width-banner-ad">
+                       <!-- /10353562/jokes-top -->
+					<div id='div-gpt-ad-1467902003945-2' style='height:90px; width:728px;'>
+					<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1467902003945-2'); });
+					</script>
+					</div>
+					</div>
+                   
+                     
+                   						<!--=========================__>
+                                ASIDE left SECTION
+                        <__=====================================-->
+                    
+                        <div class="aside-sec"> 
+                            <div class="jokes-nav">
+                            <%= render partial: "layouts/side_bar"%>
+                            </div>
+
+
+
+                            <div class="top-article-aside">
+                             <!--  < %= render partial: "layouts/top_article"%> -->
+                            </div><!--Top article main div ends here-->
+
+
+                        </div>
+                        <!-- ASIDE SEC ENDS HERE --> 
+
+
+
+                        <!--=========================__>
+                                Right SECTION
+                        <__=====================================-->
+                        
+      
+                  
+
+                       <%= yield%>
+                       </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+    (function() {
+        var params =
+        {
+            id: "79fbe1ff-ce37-4bcf-8074-965903da24ba",
+            d:  "bGF1Z2hmYWN0b3J5LmNvbQ==",
+            wid: "28901",
+            cb: (new Date()).getTime()
+        };
+
+        var qs="";
+        for(var key in params){qs+=key+"="+params[key]+"&"}
+        qs=qs.substring(0,qs.length-1);
+        var s = document.createElement("script");
+        s.type= 'text/javascript';
+        s.src = "http://api.content.ad/Scripts/widget.aspx?" + qs;
+        s.async = true;
+        //document.getElementById("contentad28901").appendChild(s);
+    })();
+</script>
+
+
+	</div><!-- Container -->
+ </div><!-- Main Content Ends Here -->
+<!--====================================__>
+                 FOOTER
+<__=====================================-->
+
+ <%= render partial: "layouts/footer"%>
+ <!--================= Project JS Files ===================-->
+      
+	  <script src="/assets/slick.min.js"></script>
+      <script src="/assets/jquery.modal.js"></script>
+      <script src="/assets/jquery.matchHeight-min.js"></script>
+      <!--<script src="http://www.laughfactory.com/js/project-js/datepicker.min.js"></script>-->
+      <!--<script src="http://www.laughfactory.com/js/project-js/datepicker.en.js"></script>-->
+      <script src="/assets/custom.js"></script>
+      <script src="/assets/jquery.marquee.min.js"></script> 
+      <script type="text/javascript" src="/assets/user_profile.js"></script>
+      <script type="text/javascript">//$('.marquee').marquee();
+
+		$('.marquee').marquee({
+		    //speed in milliseconds of the marquee
+		    duration: 25000,
+		    //gap in pixels between the tickers
+		    gap: 15,
+		    //time in milliseconds before the marquee will start animating
+		    delayBeforeStart: 0,
+		    //'left' or 'right'
+		    direction: 'left',
+		    //true or false - should the marquee be duplicated to show an effect of continues flow
+		    duplicated: true
+		});</script>
+
+<script>
+$(function(){
+$('div.inner_area marquee').marquee('smooth_m').mouseover(function () {
+$(this).trigger('stop');
+}).mouseout(function () {
+$(this).trigger('start');
+}).mousemove(function (event) {
+if ($(this).data('drag') == true) {
+this.scrollLeft = $(this).data('scrollX') + ($(this).data('x') - event.clientX);
+}
+}).mousedown(function (event) {
+$(this).data('drag', true).data('x', event.clientX).data('scrollX', this.scrollLeft);
+}).mouseup(function () {
+$(this).data('drag', false);
+});
+});
+</script>
+      <!--============= End Linking Project Js Files ==============-->
+      
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-5487232-3']);
+   _gaq.push(['_trackPageview']);
+
+   (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+      window._taboola = window._taboola || [];
+      _taboola.push({flush: true});
+   
+
+jQuery(function($){
+var jokeOfTheDay = $('.daily-joke-tweet-sec .joke-otd-sec').height(),
+	tweetOfTheDay = $('.daily-joke-tweet-sec .tweet-otd-sec').height();
+	
+	jokeOfTheDay = parseInt(jokeOfTheDay) + 20;
+	tweetOfTheDay = parseInt(tweetOfTheDay) + 20;
+
+if(jokeOfTheDay > tweetOfTheDay ) {
+	$(tweetOfTheDay).css('height', jokeOfTheDay +'px');
+} else {
+	$(jokeOfTheDay).css('height', tweetOfTheDay +'px');
+}
+
+});
+
+
+</script>
+<!--wrapper_End--> 
+</body>
+</html>

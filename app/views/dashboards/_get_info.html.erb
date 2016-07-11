@@ -1,0 +1,115 @@
+<!-- <br />
+<br />
+
+<c% @get_info.each_with_index do |k,i|%>
+<div>
+S.No <c%= i+1%>
+<p style="font: italic bold 12px/30px Georgia, serif;">< %= k.content%></p>
+</div>
+<br /><br />
+< %end%> -->
+
+<div class="main-right-content">
+                    <h1>joke bank <span class="dash-color">-</span> <span class="relation-color">
+                    						<%= @get_name%>
+						                    </span></h1> 
+
+
+    <div class="jokes-top-sec">
+        <div class="submit-joke">
+           <a href="#submit-joke-form" rel="modal:open" class="readmore-btn">Submit A joke</a>
+			
+        </div>
+<!--         <div class="jokes-search">
+            <form method="get" action="http://www.laughfactory.com/jokes/search/" onsubmit="return valid_search()">
+                    <input type="text" name="kw" id="kw" Placeholder="Search for Jokes" value="" class="joke3-search-field" />
+                  
+                    </form>
+        </div>
+        <div class="jokes-timeperiod">
+                    <a href="http://www.laughfactory.com/jokes/popular-jokes/past-week" >past week</a>
+            <a href="http://www.laughfactory.com/jokes/popular-jokes/past-month" >past month</a>
+            <a href="http://www.laughfactory.com/jokes/popular-jokes/all-time" >all time</a>
+                </div> -->
+    </div>
+    
+    
+    
+    <div class="jokes-sec" id="jokes_container" style="float: left;width:100%">
+        <!-- Joke -->
+        
+              
+      
+    <% @get_info.each_with_index do |k,i|%>  
+        <div class="jokes">
+            <div class="joke-msg">
+            	                
+                <div class="joke-text">
+                    <p id="joke_<%= k.id%>">
+                       <%= k.content%>                    </p>
+                    
+                                    </div>
+                <div class="v-social-icons">
+                    <div class="facebook">
+                    <a href="javascript:void(0);" onclick="post_joke_on_facebook('http://www.laughfactory.com/jokes/','Jokes')"><i class="fa fa-facebook"></i></a>
+                    </div>
+        
+                    <div class="twitter">
+                    	<a href="javascript:void(0);" onclick="post_joke_on_twitter('http://www.laughfactory.com/jokes/','Jokes')"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+            <!--     <span class="joke-publisher">Its More F...</span> -->
+                
+            </div>
+    
+    
+      <!--       <div class="likes-dislikes-sec">
+                <div class="likes-dislikes-count">
+                              <a class="like" href="javascript:void(0);" id="thumbs_1_6051" onclick="jokes_rating(1,6051 )"><img src="http://cdn.laughfactory.com/images/project-images/joke-smile.png" /><span id="thumbs_up_number_6051">42392</span></a>
+                    <a class="dislike" href="javascript:void(0);" onclick="jokes_rating(-1,6051)"><img src="http://cdn.laughfactory.com/images/project-images/joke-dislike.png" /><span  id="thumbs_down_number_6051">9677</span></a>
+                </div>
+                             </div> -->
+    
+        </div>
+        
+        <%end%>
+          
+      
+      
+   
+        
+        
+          
+      
+      
+
+        
+        
+            <input type="hidden" value="50" id="total_jokes" />
+            <input type="hidden" value="12" id="jokes_per_page" />
+            <input type="hidden" value="1" id="jokes_type" />
+            <input type="hidden" value="" id="kw" />
+            <input type="hidden" value="" id="jokes_category" />
+        <!--<div class="loadmore">
+            <div style="width:100%; text-align:center; display:none;" id="joke_moreloader">
+                <img src="<?php//echo base_url('images/ajax_loader.gif');?>" width="50" />
+            </div>
+            <a href="javascript:void(0)" id="loaderBtn" onClick="loadmorejokes()">LOAD MORE JOKES</a>
+        </div>-->
+         <div class="pagination-sec" style="margin-top:15px;">
+    <ul class="pagination"> <li> <div class="digg_pagination" align="center"><%= js_will_paginate @get_info,:container => false %></div></li> </ul>    </div>
+
+    <!--   <div class="pagination-sec" style="margin-top:15px;">
+ 
+    <div class="" align="center">
+  
+    < %= js_will_paginate @get_info,:container => false %> 
+  </div>
+
+
+
+</div> -->
+            
+    </div>
+    </div>

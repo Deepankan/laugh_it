@@ -1,0 +1,5 @@
+ab= Nokogiri::HTML(open(url))
+
+c=ab.css('div.joke-msg')
+
+b=c.map(&:text).delete_if{|x| x !~ /\w/}

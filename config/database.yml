@@ -1,0 +1,35 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  # database: jdt_school
+  database: noko_joke
+  # database: check_from_first
+  # database: test
+  port: 5432
+  username: root
+  password: root
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  # database: jdt_school
+  database: noko_joke
+  # database: check_from_first
+  # database: test
+  port: 5432 
+  username: root
+  password: root
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  # database: jdt_school
+  database: noko_joke
+  # database: check_from_first
+  # database: test
+  port: 5432 
+  username: root
+  password: root
+  host: localhost
