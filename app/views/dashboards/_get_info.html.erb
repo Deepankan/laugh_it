@@ -98,7 +98,7 @@ S.No <c%= i+1%>
             <a href="javascript:void(0)" id="loaderBtn" onClick="loadmorejokes()">LOAD MORE JOKES</a>
         </div>-->
          <div class="pagination-sec" style="margin-top:15px;">
-    <ul class="pagination"> <li> <div class="digg_pagination" align="center"><%= js_will_paginate @get_info,:container => false %></div></li> </ul>    </div>
+    <ul class="pagination"> <li> <div class="digg_pagination" align="center"><%= js_will_paginate @get_info,:container => false if @get_info.present?%></div></li> </ul>    </div>
 
     <!--   <div class="pagination-sec" style="margin-top:15px;">
  

@@ -9,5 +9,6 @@ class ApplicationController < ActionController::Base
 
   def get_category
   	@category = Type.all.map{|h| {id: h.id, name: h.name}}
+  	
   end
 end

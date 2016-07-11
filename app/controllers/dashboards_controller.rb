@@ -1,15 +1,29 @@
 class DashboardsController < ApplicationController
 
 	def popular
-		@get_name = Type.find_by_name("Popular Jokes").name
-		@get_info = Type.find_by_name("Popular Jokes").texts.paginate(:page => params[:page], :per_page => 10)
+		get_type = Type.first
+		  
+		 if get_type
+			@get_name = get_type.name 	
+			@get_info = get_type.texts.paginate(:page => params[:page], :per_page => 10)
+		 else
+		 	@get_name = "No data present"
+		    @get_info = []
+		 end
 
 	end
 
 	def get_list
-          @get_name = Type.find_by_id(params[:id]).name 
-          @get_info = Type.find_by_id(params[:id]).texts.paginate(:page => params[:page], :per_page => 10)
 
+		 get_type = Type.find_by_id(params[:id])
+          
+        if get_type
+			@get_name = get_type.name 	
+			@get_info = get_type.texts.paginate(:page => params[:page], :per_page => 10)
+		 else
+		 	@get_name = "No data present"
+		    @get_info = []
+		 end
 		
 	end
 
